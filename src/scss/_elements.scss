@@ -1,0 +1,14 @@
+.btn{
+	@include lin-grad($c0,$c2);
+	padding: $btn-pad;
+	box-sizing: border-box;
+	display: inline-block;
+	text-decoration: none;
+	color: $cw;
+	@include border-radius(30px);
+	&:hover{
+		@include lin-grad(lighten($c0,10%),lighten($c2,10%));
+		padding: $btn-pad-hover;
+		@include transition(.3s,ease-in-out);
+	}
+}

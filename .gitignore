@@ -1,0 +1,11 @@
+# Исключения файлов
+
+Thumbs.db
+desktop.ini
+.DS_store
+package-lock.json
+
+# Исключение директорий
+
+.idea/
+node_modules/

@@ -1,0 +1,59 @@
+@import "variables";
+@import "mixins";
+@import "shortcuts";
+@import "elements";
+
+body{
+	font:{
+		family:"Myriad Pro", Arial, sans-serif;
+		size:16px;
+	}
+	line-height: 1.48;
+}
+.person{
+	&-card{
+		background: $cw;
+		@include border-radius(10px);
+		box-shadow: $bx-sh;
+		padding: $card-pad;
+		text-align: center;
+		display: inline-block;
+		&-avatar{
+			@if $corners{
+				@include border-radius(50%);
+			}
+			box-sizing: border-box;
+			border:2px solid $c0;
+			overflow: hidden;
+			width: 80%;
+			margin: {
+				left: auto;
+				right: auto;
+			}
+			box-shadow: $bx-sh;
+			img{
+				display:block;
+				@include responsive-img;
+			}
+		}
+		&-info{
+			margin: 20px 0;
+		}
+		&-name,
+		&-surname{
+			display: inline-block;
+			color: $text-color;
+			font-size: 1.2em;
+		}
+		&-position{
+			@extend %line;
+			font-weight: bold;
+			color: $c1;
+			padding: 10px 0;
+		}
+	}
+}
+.team{
+	padding: 60px 0;
+	background: $light-gray;
+}

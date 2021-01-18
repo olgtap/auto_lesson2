@@ -1,0 +1,30 @@
+@mixin clearfix{
+	&:before,
+	&:after{
+		content:"";
+		display: table;
+	}
+	&:after{
+		clear: both;
+	}
+}
+
+@mixin border-radius($radius){
+	-webkit-border-radius:$radius;
+	border-radius:$radius;
+	background-clip:padding-box;
+}
+
+@mixin lin-grad($c1,$c2){
+	background: linear-gradient(260deg, $c1,$c2);
+}
+
+@mixin responsive-img{
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
+}
+
+@mixin transition($time, $ease){
+	transition: all #{$time} #{$ease};
+}

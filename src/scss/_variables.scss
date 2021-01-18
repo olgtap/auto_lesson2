@@ -1,0 +1,26 @@
+$site: blue;
+
+@if $site == green{
+	$c0:#00CC89!global;
+	$c2:#1BD0A6!global;
+	$corners:true!global;
+}
+@else if $site == blue {
+	$c0:#09c!global;
+	$c2:#1cc7d0!global;
+	$corners:true!global;
+}
+
+$c1:#333;
+$cw:#fff;
+$sh-c:darken($c0,10%);
+
+$bx-sh:0 2px 3px rgba($sh-c,0.2);
+$btn-pad:10px 25px;
+$btn-pad-hover:10px 35px;
+$card-pad:20px;
+
+$text-color:#545f75;
+$light-gray:#fcfcfc;
+
+

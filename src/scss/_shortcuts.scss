@@ -1,0 +1,13 @@
+%line{
+	&:before{
+		content:"";
+		display:block;
+		height: 3px;
+		width: 20%;
+		background: $c0;
+		margin: {
+			left: auto;
+			right: auto;
+		}
+	}
+}
