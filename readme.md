@@ -51,7 +51,7 @@ npm i bootstrap@latest -S
 ```
 git remote add origin https://github.com/olgtap/auto_lesson2.git
 ```
-4. Загрузить данные на сервер
+3.1 Загрузить данные на сервер
 1) Проиндексировать изменения
 ```
 git add .
